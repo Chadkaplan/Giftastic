@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports GIFs</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Container for the whole page -->
+    <div class="fluidcontainer">
+
+        <!-- Bootstrap jumbotron -->
+        <div class="jumbotron text-center
+        9 ">
+            <div class="jumbotron-text">                     
+                <h1>Sports Gif Generator!</h1>
+                <h3>Click a button or make your own!</h3>
+                <h5>The choice is yours!</h5>
+            </div>
+        </div>
+
+
+        <!-- The form and input-->
+        <div class="row">
+            <div class="col-12">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Type in a team!</label>
+                        <input type="text" id="team-input"><br>
+                    </div>
+                    <!-- Button to call Ajax -->
+                    <input id="add-team" type="submit" value="search">
+                </form>
+            </div>
+        </div>
+
+        <!-- Make Buttons append here -->
+        <div class="row">
+            <div class="container">
+                <!-- Buttons appended to this div -->
+                <div id="buttons-view"></div>
+            </div>
+        </div>
+
+
+        <!-- Viewer for the GIFs -->
+        <div class="row" id="gif-view"></div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
