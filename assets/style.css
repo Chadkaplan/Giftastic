@@ -1,4 +1,21 @@
 body{
-    background: lightblue;
+    background-image: url(./images/football.jpg);
+    background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.jumbotron{
+    background-image: url(./images/Footballfield.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-class{
+    float: left;
+    margin: 15px;
+}
+#add-team{
+    display: inline-block;
+}
+#team-button{
+    
+}
+
